@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#ccc, #00ced1);
+  background-color: #ccc;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+}
+
+.resume{
+	width: 1000px;
+	background: #fff;
+	margin: auto;
+	display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.left{
+	background: #292b2f;
+	width: 250px;
+	padding: 0 20px;
+}
+
+.right{
+	width: calc(100% - 250px);
+
+}
+
+.left .img_holder{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.left .img_holder img{
+	width: 200px;
+	border-radius: 30px;
+}
+
+.pb{
+	padding-bottom: 20px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: #ccc;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 50px;
+	height: 3px;
+	background: #ccc;
+}
+
+.left .icon{
+	font-size: 20px;
+	color: #9153c9;
+}
+
+.left .text{
+	color: #9153c9;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.contact .li_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.contact .li_wrap .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills .li_wrap{
+	background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+	margin-top: 5px;
+}
+
+.hobbies .li_wrap{
+	border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fff;
+}
+
+.hobbies .li_wrap:hover{
+	background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: #9153c9;
+}
+
+.header{
+	background: #292b2f;
+	padding: 15px 30px;
+	color: #fff;
+	height: 275px;
+}
+
+.header .name{
+	font-size: 52px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ccc;
+}
+
+.header .role{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.header .about{
+	margin-top: 20px;
+	line-height: 26px;
+}
+
+.right_inner{
+	padding: 30px;
+	color: #292b2f;
+}
+.right_inner .education{
+	margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #9153c9;
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #9153c9;
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #9153c9;
+	border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #9153c9;
+}
+.right .social .fa{
+
+  font-size: 30px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 20px;
+  padding-left: 0;
+}
